@@ -5,7 +5,7 @@ router.use(logger)
 
 router.get("/", (req, res) => {
   console.log(req.query.name)
-  res.send("User List")
+  res.send(users)
 })
 
 router.get("/new", (req, res) => {
